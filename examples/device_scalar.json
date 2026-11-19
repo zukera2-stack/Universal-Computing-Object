@@ -1,0 +1,14 @@
+{
+  "schema_version": "uco.device.v0.1",
+  "device_id": "sim-vector-a",
+  "device_kind": "simulated",
+  "interface_version": "uco.vector.v0.1",
+  "operations": [
+    "vector.add.i32"
+  ],
+  "capabilities": [
+    "compute.vector.add.i32"
+  ],
+  "max_items": 1024,
+  "strategy": "scalar"
+}
