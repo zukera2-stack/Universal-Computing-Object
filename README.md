@@ -32,3 +32,15 @@ Only documentation and an executable, standard-library prototype are targeted. S
 ## Contribution and license
 
 No open-source license has been selected yet. Public source visibility alone does **not** grant permission to redistribute or modify it. An explicit license must be chosen by the repository owner before inviting external code contributions.
+
+## Stage 01 prototype
+
+From the repository root, using Python 3.11+:
+
+```sh
+python -m unittest discover -s tests -v
+python -m uco_demo --object examples/vector_add.json --device examples/device_scalar.json --grant compute.vector.add.i32
+python -m uco_demo --object examples/vector_add.json --device examples/device_chunked.json --grant compute.vector.add.i32
+```
+
+Expected result: `[5, 7, 9]` on both simulated targets. See [report](docs/STAGE01_REPORT.md) for verification status.
