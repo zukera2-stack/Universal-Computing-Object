@@ -1,0 +1,2 @@
+# Stage 07R acceptance gate
+Integrate existing modules, preserve their APIs and tests. Demonstrate autonomous device selection from a trusted registry and changing simulated availability; preserve logical identity and results across migration; count actual primitive calls; store source and result through adaptive memory; reject missing grants and unavailable or incompatible targets. No real hardware or network claims. Work in stacked experimental branch and do not merge automatically. Report CI and limitations.
