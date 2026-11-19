@@ -1,0 +1,9 @@
+{
+  "schema_version": "uco.graph.device.v0.1",
+  "device_id": "sim-graph-three",
+  "lanes": 3,
+  "max_items": 1024,
+  "primitives": [
+    "add.i32.checked"
+  ]
+}

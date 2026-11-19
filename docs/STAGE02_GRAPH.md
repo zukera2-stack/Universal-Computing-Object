@@ -1,0 +1,5 @@
+# Stage 02G — graph lowering experiment (roadmap insertion)
+The original roadmap Stage 02 (storage policy) remains deferred. This experiment precedes it.
+One vector-add object is lowered into a DAG of independent checked-add nodes. Device passports specify primitive availability and lane capacity (1–64), not target algorithms. A single generic evaluator executes internally generated graphs. The lane and batch attributes model resource placement; actual execution remains sequential Python. No novel algorithm synthesis, parallel speedup, arbitrary graph ingestion, real hardware or general-purpose language is claimed.
+Acceptance: unseen widths 3, 5 and 7 require no new backend; graph placement changes; outputs match Stage 01; deterministic graph identity; rejection of invalid passports, grants and overflow. Run python -m unittest discover -s tests -v. CI status pending at submission.
+The compiler currently reuses Stage 01 validation via a synthetic scalar passport; the Stage 01 executor is not used by graph execution. This is a temporary compatibility mechanism.
